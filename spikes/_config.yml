@@ -1,12 +1,11 @@
 #######################################################################################
 # Book settings
-title : Scientific Python QuickStart
-author: Thomas J. Sargent and John Stachurski
-logo: 'qe-logo-large.png'
+title : PoC For Documenting Spikes in JupyterBook
+author: Patrick Kelley
 
 # Information about where the book exists on the web
 description: >-
-  A brief introduction to Python programming for scientific applications.
+  Trying out JupyterBook to see if we can use it fora knowledge base.
 
 #######################################################################################
 # Execution settings
@@ -21,18 +20,19 @@ html:
 # #######################################################################################
 # Interact link settings
 notebook_interface            : "notebook"
+# notebook_interface            : "lab"
 
 #######################################################################################
 # Launch button settings
 repository:
-  url                         : https://github.com/executablebooks/quantecon-mini-example
-  path_to_book                : "mini_book"
-
-binder:
-  binderhub_url               : "https://mybinder.org"
-  text                        : "Launch binder"
+  url                         : https://github.com/pakelley/quantecon-jupyter-book
+  path_to_book                : "spikes"
 
 latex:
   latex_engine                : "xelatex"
   latex_documents:
     targetname: book.tex
+
+# Configure your Binder links, such as the URL of the BinderHub.
+launch_buttons:
+  binderhub_url             : https://mybinder.org
